@@ -6,7 +6,6 @@ function App() {
   return (
   <>
     <MeuHeader/>
-    <h1>Blog</h1>
     <Article/>
     <Footer/>
     </>

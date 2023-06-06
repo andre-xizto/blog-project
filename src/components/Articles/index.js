@@ -2,9 +2,14 @@ import Post from '../Post';
 
 const Article = () => {
     return (
-        <>
-        <h1>Article.js</h1>
-        <Post/></>
+        <section className="container p-3">
+        <h3>Article</h3>
+        <div className="list-posts flex my-4">
+            <Post/>
+            <Post/>
+            <Post/>
+        </div>
+        </section>
     );
 }
 
