@@ -1,9 +1,16 @@
-import MeuHeder from './components/Header';
+import MeuHeader from './components/Header';
+import Footer from './components/Footer';
+import Article from './components/Articles';
 
 function App() {
-  return <div>
-    <MeuHeder/>
-  </div>;
+  return (
+  <>
+    <MeuHeader/>
+    <h1>Blog</h1>
+    <Article/>
+    <Footer/>
+    </>
+  )
 }
 
 export default App;

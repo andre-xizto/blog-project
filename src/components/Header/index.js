@@ -1,5 +1,5 @@
 function Header () {
-    return <h1>Meu blog</h1>;
+    return <h1>Header.js</h1>;
 }
 
 export default Header;
