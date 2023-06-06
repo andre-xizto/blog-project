@@ -1,6 +1,8 @@
+import MeuHeder from './components/Header';
+
 function App() {
   return <div>
-    <h1>Blog</h1>
+    <MeuHeder/>
   </div>;
 }
 
