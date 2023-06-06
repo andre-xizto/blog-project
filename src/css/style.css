@@ -159,6 +159,10 @@
   margin-right: 64px !important;
 }
 
+.mr-84 {
+  margin-right: 84px;
+}
+
 .mr-7 {
   margin-right: 72px !important;
 }
@@ -629,6 +633,17 @@ h2 {
 h3 {
   font-size: 36px;
   font-weight: 300;
+  max-height: 122px;
+  max-width: 250px;
+  overflow: hidden;
+  max-lines: 2;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 960px) {
+  h3 {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 h4 {
@@ -642,6 +657,11 @@ h5 {
   letter-spacing: 1px;
   color: #4DDCFF;
   font-weight: 300;
+}
+@media screen and (max-width: 960px) {
+  h5 {
+    margin-top: 24px;
+  }
 }
 
 h6 {
@@ -769,6 +789,29 @@ header {
   height: 56px;
   border-radius: 50%;
   background-color: #4E4E50;
+}
+
+.post {
+  width: 300px;
+}
+
+.container-posts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: start;
+  align-items: center;
+  padding: 24px;
+  max-width: 1200px;
+}
+
+.resume {
+  overflow: hidden;
+  max-lines: 2;
+  max-height: 45px;
+  max-width: 250px;
+  text-overflow: ellipsis;
+  line-height: 150%;
 }
 
 .s-0 {
@@ -924,6 +967,10 @@ header {
   margin-right: 64px !important;
 }
 
+.mr-84 {
+  margin-right: 84px;
+}
+
 .mr-7 {
   margin-right: 72px !important;
 }
@@ -1394,6 +1441,17 @@ h2 {
 h3 {
   font-size: 36px;
   font-weight: 300;
+  max-height: 122px;
+  max-width: 250px;
+  overflow: hidden;
+  max-lines: 2;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 960px) {
+  h3 {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 h4 {
@@ -1407,6 +1465,11 @@ h5 {
   letter-spacing: 1px;
   color: #4DDCFF;
   font-weight: 300;
+}
+@media screen and (max-width: 960px) {
+  h5 {
+    margin-top: 24px;
+  }
 }
 
 h6 {

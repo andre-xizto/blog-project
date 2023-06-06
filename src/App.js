@@ -1,13 +1,12 @@
 import MeuHeader from './components/Header';
 import Footer from './components/Footer';
-import Article from './components/Articles';
+import Main from './pages/Main';
 
 function App() {
   return (
   <>
     <MeuHeader/>
-    <Article/>
-    <Footer/>
+    <Main/>
     </>
   )
 }

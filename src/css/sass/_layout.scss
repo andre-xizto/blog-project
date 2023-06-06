@@ -125,3 +125,26 @@ header {
     border-radius: 50%;
     background-color: $gray-2;
 }
+
+.post {
+    width: 300px;
+}
+
+.container-posts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: start;
+    align-items: center;
+    padding: 24px;
+    max-width: 1200px;
+}
+
+.resume {
+    overflow: hidden;
+    max-lines: 2;
+    max-height: 45px;
+    max-width: 250px;
+    text-overflow: ellipsis;
+    line-height: 150%;
+}
