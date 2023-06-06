@@ -14,6 +14,18 @@ header {
     padding: 24px;
 }
 
+.logo {
+    cursor: pointer;
+
+    &-img {
+        transition: .3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
 .flex {
     display: flex;
 }
@@ -66,6 +78,7 @@ header {
     font-size: 16px;
     display: inline-block;
     padding: 16px;
+    cursor: pointer;
 
     &:hover {
         opacity: 0.8;
@@ -128,6 +141,7 @@ header {
 
 .post {
     width: 300px;
+    cursor: pointer;
 }
 
 .container-posts {
@@ -147,4 +161,44 @@ header {
     max-width: 250px;
     text-overflow: ellipsis;
     line-height: 150%;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.titulo-post {
+    transition: .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.error-container {
+    margin: auto auto;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    max-width: 600px;
+}
+
+.error-btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: $white-normal;
+    background-color: $black-light;
+    border: 0;
+    transition: .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
 }

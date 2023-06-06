@@ -23,11 +23,12 @@ const Main = () => {
 
     return (
         <>
+        <h3 className='container-posts'>Articles</h3>
         <div className="container-posts">
             {
                 post.map(post => {
                     return (
-                    <Post key={post.id} title={post.titulo} category={post.categoria} author={post.autor} date={format(post.data_unix, 'MMM dd, yyyy')} tempo={post.tempo_de_leitura}>
+                    <Post key={post.id} id={post.id} title={post.titulo} category={post.categoria} author={post.autor} date={format(post.data_unix, 'MMM dd, yyyy')} tempo={post.tempo_de_leitura}>
                         {post.resumo}
                     </Post>
                     );

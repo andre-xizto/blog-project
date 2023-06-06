@@ -681,6 +681,16 @@ header {
   padding: 24px;
 }
 
+.logo {
+  cursor: pointer;
+}
+.logo-img {
+  transition: 0.3s ease;
+}
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
 .flex {
   display: flex;
 }
@@ -733,6 +743,7 @@ header {
   font-size: 16px;
   display: inline-block;
   padding: 16px;
+  cursor: pointer;
 }
 .menu-link:hover {
   opacity: 0.8;
@@ -793,6 +804,7 @@ header {
 
 .post {
   width: 300px;
+  cursor: pointer;
 }
 
 .container-posts {
@@ -812,6 +824,43 @@ header {
   max-width: 250px;
   text-overflow: ellipsis;
   line-height: 150%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.resume:hover {
+  text-decoration: underline;
+}
+
+.titulo-post {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.titulo-post:hover {
+  text-decoration: underline;
+}
+
+.error-container {
+  margin: auto auto;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  max-width: 600px;
+}
+
+.error-btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: #F5F7F7;
+  background-color: #15171A;
+  border: 0;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.error-btn:hover {
+  opacity: 0.9;
 }
 
 .s-0 {

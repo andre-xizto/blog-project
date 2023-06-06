@@ -1,12 +1,11 @@
 import MeuHeader from './components/Header';
-import Footer from './components/Footer';
-import Main from './pages/Main';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
   <>
     <MeuHeader/>
-    <Main/>
+    <Outlet/>
     </>
   )
 }

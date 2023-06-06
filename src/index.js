@@ -3,11 +3,37 @@ import ReactDOM from 'react-dom/client';
 import './css/style.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createBrowserRouter, RouterProvider, Navigate} from 'react-router-dom';
+import Main from './pages/Main';
+import ErrorPage from './components/ErrorPage';
+import PostDetail from './components/PostDetail';
+
+const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <App/>,
+      errorElement: <ErrorPage/>,
+      children: [
+        {
+          path: '/',
+          element: <Main/>
+        },
+        {
+          path: 'old_index',
+          element: <Navigate to='/'/>
+        },
+        {
+          path: '/categorias/:categoria/post/:id',
+          element: <PostDetail/>
+        }
+      ]
+    }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
