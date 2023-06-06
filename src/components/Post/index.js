@@ -1,14 +1,11 @@
-const Post = () => {
+const Post = (propriedades) => {
+
     return (
         <div className="post mx-2">
             <div className="img-post"></div>
-            <h5>Tecnologia</h5>
-            <h3>O título do post</h3>
-            <p>Lorem IPSUM DOLOR SIT AMET Lorem IPSUM DOLOR SIT AMET
-            Lorem IPSUM DOLOR SIT AMET
-            Lorem IPSUM DOLOR SIT AMET
-            Lorem IPSUM DOLOR SIT AMET
-            Lorem IPSUM DOLOR SIT AMET
+            <h5>{propriedades.subtitle}</h5>
+            <h3>{propriedades.title}</h3>
+            <p>{propriedades.children}
             </p>
             <div className="flex p-1 align-center mt-2">
                 <div className="img-profile"></div>
